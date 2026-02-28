@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "Second year of torture",
   "license": "ISC",
+  "type": "module",
   "author": "",
   "main": "temp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node temp"
+    "transpile": "npx tsc script.ts && node script",
+    "start": "npx ts-node script.ts"
   },
-  "dependencies": {
-    "chalk": "^5.6.2"
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
