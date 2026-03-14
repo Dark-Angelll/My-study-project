@@ -1,7 +1,8 @@
-function power (base: number, n: number) {
-    return base ** n;
-}
+import { LibraryBook } from "./types/LibraryBook";
 
-const result = power(7,3);
-
-console.log(result);
+const book1 = new LibraryBook({
+    title: "Война и мир",
+    author: "Л. Н. Толстой",
+    year: 1869,
+});
+book1.borrow("Петр Разумовский");
