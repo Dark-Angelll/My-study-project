@@ -1,0 +1,58 @@
+/* общий контейнер */
+body {
+  font-family: sans-serif;
+  background: #f5f7ff;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  }
+  
+  /* все input */
+  input {
+  display: block;
+  width: 300px;
+  margin: 8px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  }
+  
+  /* кнопка */
+  button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  }
+  
+  button:hover {
+  background: #574fd6;
+  }
+  
+  /* список */
+  ul {
+  list-style: none;
+  padding: 0;
+  width: 320px;
+  margin: 20px auto;
+  }
+  
+  /* элементы списка */
+  li {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.2s;
+  }
+  
+  li:hover {
+  transform: translateY(-2px);
+  }  
