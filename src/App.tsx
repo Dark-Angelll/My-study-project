@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
-      <ToDoList />
+      {/* <ToDoList /> */}
     </>
   )
 }

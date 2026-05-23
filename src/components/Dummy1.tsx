@@ -1,4 +1,4 @@
-import { NavLink, Link } from "react-router";
+import { NavLink, Link, Outlet } from "react-router";
 
 const Dummy1 = () => {
   return (<>
@@ -7,6 +7,7 @@ const Dummy1 = () => {
         <Link to = '/waySecond'>На первую страницу</Link>
         <NavLink to = '/activated'>На вторую страницу</NavLink>
     </nav>
+    <Outlet/>
   </>
   );
 }
