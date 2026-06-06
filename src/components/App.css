@@ -56,3 +56,63 @@ body {
   li:hover {
   transform: translateY(-2px);
   }  
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+  }
+  
+  .heart-path {
+    fill: transparent;
+    stroke: #ff4d6d;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+  
+    animation: heartLoading 3s infinite ease-in-out;
+  }
+  
+  @keyframes heartLoading {
+    /* Рисуем контур */
+    0% {
+      stroke-dashoffset: 300;
+      fill: transparent;
+    }
+  
+    70% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+  
+    /* Заливаем сердце */
+    85% {
+      stroke-dashoffset: 0;
+      fill: rgba(255, 77, 109, 0.3);
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+      fill: #ff4d6d;
+    }
+  }
+  .heart-loader {
+    animation: pulse 3s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 85% {
+      transform: scale(1);
+    }
+  
+    92% {
+      transform: scale(1.08);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,8 +1,9 @@
 import { ToDoList } from "./components/ToDoList";
 import Dummy1 from "./components/Dummy1";
-import { createBrowserRouter, RouterProvider } from "react-router";
 import WaySecond from "./components/WaySecond";
 import ThirdComponent from "./components/ThirdComponent";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import Posts from "./components/Posts";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,11 @@ const router = createBrowserRouter([
     {
       path: 'activated',
       Component: ThirdComponent
-    }],
+    }, {
+      path: 'posts',
+      Component: Posts
+    }
+  ]
   },
 ]);
 
